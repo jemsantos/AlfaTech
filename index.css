@@ -1,0 +1,418 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+img,
+picture,
+iframe {
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+/* reset - FIM */
+
+/* header - INI */
+header {
+  background-color: #ffffff;
+  padding: 8px;
+
+  & .topo {
+    padding: 0 12px 0 0;
+    max-width: 1232px;
+    margin: 0 auto;
+
+    /* border: 1px solid #000000; */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & .logotipo {
+      padding: 8px;
+
+      display: flex;
+      gap: 12px;
+
+      & img {
+        width: 80px;
+      }
+
+      & div h1 {
+        font-size: 32px;
+        /* color: #000000; */
+      }
+
+      & div p {
+        font-size: 16px;
+        font-weight: 600;
+        color: #2f86d6;
+      }
+    }
+
+    & .container-menu ul.menu {
+      display: flex;
+      gap: 16px;
+
+      & a {
+        font-size: 18px;
+        font-weight: 600;
+        color: #233032;
+      }
+    }
+  }
+}
+/* header - FIM */
+
+/* main - INI */
+
+.banner {
+  padding: 16px;
+  min-height: 620px;
+  background-color: #2f86d6;
+  border-radius: 12px 12px 0 0;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+
+  /* border: 1px solid red; */
+
+  & .banner-message {
+    width: 490px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 36px;
+
+    /* border: 1px solid blue; */
+
+    & p {
+      font-size: 16px;
+      line-height: 24px;
+      word-spacing: 4px;
+      color: #ffffff;
+    }
+
+    & h2 {
+      font-size: 28px;
+      line-height: 40px;
+      color: #ffffff;
+    }
+  }
+
+  & img {
+    margin: 0;
+    width: 50%;
+
+    /* border: 1px solid blue; */
+  }
+}
+
+.limitar-secao {
+  width: 100%;
+  max-width: 1232px;
+  margin: 0 auto;
+
+  margin: 1px solid red;
+}
+
+.anuncio-01 {
+  width: 100%;
+  padding: 75px 50px;
+  border-radius: 0 0 12px 12px;
+  background-color: #233032;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & h2 {
+    font-size: 24px;
+    color: #ffffff;
+  }
+
+  & p {
+    font-size: 16px;
+    color: #ffffff;
+  }
+
+  & a.button {
+    padding: 8px;
+    border-radius: 8px;
+    background-color: #2f66d6;
+    color: #000000;
+    font-size: 18px;
+  }
+}
+
+#informacoes {
+  margin-top: 36px;
+  padding: 16px 0;
+  background-color: #ffffff;
+
+  /* border: 1px solid red; */
+
+  & h2 {
+    font-size: 32px;
+    color: #000000;
+    text-align: center;
+
+    /* border: 1px solid blue;
+    padding-left: 0;
+    padding-right: 0px; */
+
+    & span {
+      color: #2f86d6;
+      font-size: 32px;
+    }
+  }
+
+  & div.servicos {
+    margin-top: 8px;
+
+    display: flex;
+    gap: 16px;
+    justify-content: space-around;
+
+    /* border: 1px solid red; */
+
+    & div.servico {
+      width: 350px;
+      text-align: center;
+      padding: 8px;
+
+      border: 1px solid #2f86d6;
+      box-shadow: 2px 2px 2px #2f86d6;
+
+      display: flex;
+      flex-direction: column;
+
+      & img {
+        width: 80px;
+      }
+
+      & h4 {
+        font-size: 18px;
+        color: #000000;
+      }
+
+      & p {
+        font-size: 16px;
+        color: #000000;
+      }
+    }
+  }
+}
+
+#planos {
+  margin-top: 36px;
+  padding: 16px 0;
+  background-color: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* border: 1px solid red; */
+
+  & h2 {
+    font-size: 32px;
+    color: #000000;
+
+    /* border: 1px solid red; */
+
+    & span {
+      color: #2f86d6;
+      font-size: 32px;
+    }
+  }
+
+  & table {
+    width: 95%;
+    margin-top: 28px;
+    font-size: 16px;
+
+    border: 0px solid #2f86d6;
+    border-radius: 8px;
+    box-shadow: 0 2px 40px 15px rgba(47, 134, 214, 1);
+
+    & thead div {
+      /* padding: 8px 0 12px 0; */
+      background-color: #ffffff;
+
+      & h4 {
+        font-size: 18px;
+        color: #000000;
+        padding: 4px 0;
+
+        /* border: 1px solid #2f86d6; */
+      }
+
+      & img {
+        width: 100px;
+        margin-top: 8px;
+        padding: 0;
+
+        /* border: 1px solid #2f86d6; */
+      }
+
+      & p {
+        margin-top: 8px;
+        padding: 8px 0 12px 0;
+        font-size: 13px;
+        color: #a89f9f;
+        font-weight: 500;
+
+        /* border: 1px solid #2f86d6; */
+      }
+    }
+
+    & tbody {
+      text-align: center;
+
+      & tr:nth-child(odd) {
+        background-color: #f6f6f6;
+      }
+
+      & tr:nth-child(even) {
+        background-color: #ffffff;
+      }
+
+      & td {
+        width: 448px;
+        padding: 12px;
+      }
+    }
+  }
+}
+
+.anuncio-02 {
+  margin-top: 36px;
+  width: 100%;
+  padding: 75px 50px;
+  background-color: #2f86d6;
+  border-radius: 12px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & h2 {
+    font-size: 24px;
+    color: #ffffff;
+  }
+
+  & a.button {
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #233032;
+    color: #ffffff;
+    font-size: 18px;
+  }
+}
+/* main - FIM */
+
+/* rodapé - INI */
+footer {
+  background-color: #ffffff;
+  margin-top: 24px;
+
+  & #contato {
+    width: 100%;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* border: 1px solid red; */
+
+    & div.logotipo {
+      padding: 8px;
+
+      display: flex;
+      gap: 12px;
+
+      & img {
+        width: 80px;
+      }
+
+      & div h2 {
+        font-size: 32px;
+        /* color: #000000; */
+      }
+
+      & div p {
+        font-size: 16px;
+        font-weight: 600;
+        color: #2f86d6;
+      }
+    }
+
+    & div.contato {
+      margin-top: 16px;
+
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+
+      & p {
+        font-size: 16px;
+        color: #000000;
+      }
+    }
+
+    & div.autor {
+      width: 100%;
+      margin-top: 16px;
+      background-color: #f1f3f7;
+      border-radius: 12px 12px 0 0;
+
+      & p {
+        font-size: 16px;
+        text-align: center;
+        padding: 8px 0;
+
+        & a span {
+          font-size: 16px;
+          color: #2f86d6;
+        }
+      }
+    }
+  }
+}
+
+/* rodapé - FIM */
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.3;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+.anime {
+  /* animation: appear 3s linear; */
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0;
+}
